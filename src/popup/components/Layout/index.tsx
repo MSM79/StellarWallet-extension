@@ -2,8 +2,6 @@ import React from 'react';
 
 export default function Layout({ children }) {
   return (
-    <>
-      <div className="w-[200px] h-[500px]">{children}</div>
-    </>
+    <div style={{ height: '600px', width: '360px' }}>{children}</div>
   );
 }
