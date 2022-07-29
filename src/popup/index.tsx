@@ -1,17 +1,21 @@
 import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-import { HashRouter as Router } from 'react-router-dom';
+import {
+  HashRouter as Router,
+  Route,
+  Routes,
+} from 'react-router-dom';
 
-import Home from '../popup/pages/Home';
+import Home from './pages/Home';
+import Signup from './pages/Signup';
 
 render(
-  // <Routes>
-  //   <Route path="/" element={<Home />} />
-  // </Routes>
   <Router>
-    <Home />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/signup" element={<Signup />} />
+    </Routes>
   </Router>,
   global.document.getElementById('root'),
 );
