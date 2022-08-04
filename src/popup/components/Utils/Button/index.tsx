@@ -6,7 +6,7 @@ type Btn = {
 
 export default function Button({ text }: Btn) {
   return (
-    <button className="bg-gray-500 hover:bg-gray-600 text-white text-lg w-full rounded h-12">
+    <button className="bg-gray-500 hover:bg-gray-600 text-white text-lg w-full h-12">
       {text}
     </button>
   );
