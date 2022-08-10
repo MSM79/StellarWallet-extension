@@ -11,7 +11,7 @@ export default function NextWelcome() {
           <Link to="/signup" className="mb-2">
             <Button text="Create Account" />
           </Link>
-          <Link to="/signin">
+          <Link to="/restore">
             <Button text="Restore Account" />
           </Link>
         </div>
